@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - Taller: ¡Ingenio en Acción 2.0! Juegos Scratch que Cambian el Mundo (3º Primaria) - Sesión 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .header { background-color: #2196F3; color: white; text-align: center; padding: 10px; } /* Blue Accent */
+        .activity { margin-bottom: 20px; }
+        .banner {
+            background-color: #2196F3; /* Blue Accent */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+        strong { /* Using strong instead of red span for keywords based on workshop example style */
+            font-weight: bold;
+        }
+         ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555;} /* Style for static title */
+         em { /* Style for facilitator notes within dialogue */
+            display: block; /* Puts note on a new line */
+            margin-top: 5px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content) {
+                content.style.display = content.style.display === "none" ? "block" : "none";
+            }
+        }
+
+        // Initialize content hidden state on load
+        window.onload = () => {
+             // Ensure all content starts hidden
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Playbook - Taller: ¡Ingenio en Acción 2.0! Juegos Scratch que Cambian el Mundo (3º Primaria) - Sesión 3</h1>
+    </div>
+    <div class="container">
+        <h2 class="time-title">Tiempo efectivo de clase: 40 minutos</h2> <!-- Static Title -->
+
+        <!-- De un Vistazo y Preparación Previa -->
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('activity_0_content')">
+                <div class="title">📝 De un Vistazo: Sesión 3</div>
+            </div>
+            <div id="activity_0_content" class="content">
+                <table>
+                    <tr>
+                        <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
+                            <strong>🎯 Objetivos:</strong>
+                            <ul>
+                                <li>Recordar las ideas generadas en la sesión anterior (6-3-5).</li>
+                                <li>Seleccionar y refinar los elementos clave de una idea de juego por equipo.</li>
+                                <li><strong>Táctica 3:</strong> Crear un "Guion Gráfico de Juego Scratch" (Storyboard) visualizando 6 escenas clave de la jugabilidad y narrativa.</li>
+                            </ul>
+                            <strong>💡 Tácticas Principales:</strong> Storyboard (Adaptado a Guion Gráfico de Juego Scratch - 6 Escenas).
+                            <br><br>
+                            <strong>🔑 Entregable Clave:</strong> Storyboard de 6 viñetas por equipo (en Miro o papel) detallando la secuencia del juego.
+                        </td>
+                        <td style="width: 50%; padding: 10px;">
+                            <strong>🛠️ Materiales Específicos:</strong>
+                            <ul>
+                                <li>Proyector o pantalla interactiva.</li>
+                                <li>Presentación de diapositivas (Láminas 15-17 detalladas abajo).</li>
+                                <li>Acceso a tablero Miro (o similar) con las ideas del 6-3-5 visibles y plantillas de Storyboard (6 cuadros) preparadas, O hojas de papel grandes con la plantilla.</li>
+                                <li>Marcadores, lápices, colores.</li>
+                                <li>Ejemplo "Coral Bleaching" para Storyboard (Lámina 16).</li>
+                            </ul>
+                             <strong>🔧 Preparación Previa para ESTA Sesión:</strong>
+                            <ol>
+                                <li><strong>Presentación Lista:</strong> Tener listas las Láminas 15 a 17. Asegurarse de que el ejemplo del Storyboard de Coral Bleaching sea claro y siga la estructura de 6 escenas.</li>
+                                <li><strong>Plantillas Storyboard:</strong> Preparar plantillas de 6 cuadros (digitales o físicas) para cada equipo.</li>
+                                <li><strong>Espacio de Trabajo:</strong> Equipos deben tener acceso a sus hojas/tableros del 6-3-5 de la Sesión 2.</li>
+                                <li><strong>Materiales de Dibujo:</strong> Listos.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Desarrollo de la Sesión -->
+
+        <!-- Actividad 1: Repaso y Conexión -->
+        <div id="activity-1" class="activity" data-time="5">
+            <div class="banner" onclick="toggleContent('activity_1_content')">
+                <div class="title">🔗 Actividad 1: Repaso y Conexión ⏰ Tiempo: 5 minutos</div>
+            </div>
+            <div id="activity_1_content" class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Proyectar la <strong>Diapositiva 15 (Inicio - Título):</strong> Título: "¡Sesión 3: La Película del Juego! 🎬". Imagen: Una tira de película mostrando viñetas de un videojuego simple o personajes de Scratch en diferentes escenas. Texto: "¡Nivel 3: Vamos a dibujar la historia de nuestro juego paso a paso!".
+                        </td>
+                        <td>
+                            "¡Qué pasa, súper desarrolladores! ¡De vuelta para el Nivel 3 de 'Ingenio en Acción 2.0'! En la sesión anterior, ¡fue una locura de ideas con el 6-3-5! Llenaron sus tableros con mecánicas, personajes y mensajes ODS geniales."
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 2:</strong> Pedir a los equipos que revisen sus ideas del 6-3-5 y empiecen a pensar en la idea general.
+                        </td>
+                        <td>
+                            "Hoy vamos a elegir las <strong>mejores</strong> de esas ideas y las vamos a ordenar para ¡crear la <strong>película</strong> de nuestro videojuego! Usaremos la táctica <strong>'Storyboard'</strong> o Guion Gráfico para dibujar las escenas más importantes de nuestro juego."
+                            <br><br>
+                            "Miren sus ideas del 6-3-5. Empiecen a pensar... ¿Cuál es la idea general de juego que más les gusta? ¿Qué personaje usarán? ¿Cuál será la gran aventura?"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 2: Táctica 3: Storyboard -->
+        <div id="activity-2" class="activity" data-time="30">
+            <div class="banner" onclick="toggleContent('activity_2_content')">
+                <div class="title">🎬 Actividad 2: Táctica 3: Storyboard (Adaptado a Guion Gráfico de Juego Scratch) - Visualizando la Jugabilidad Paso a Paso ⏰ Tiempo: 30 minutos</div>
+            </div>
+            <div id="activity_2_content" class="content">
+                <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Proyectar la <strong>Diapositiva 16 (Instrucciones):</strong> Título: "Nivel 3: ¡Storyboard - La Película de Nuestro Juego en 6 Escenas!" (Icono 🎬 + ✏️). Instrucción: "¡Como directores de cine! En equipo, dibujen 6 escenas clave de su juego Scratch: 1. Inicio 🏁, 2. Nivel 1 🌲, 3. Mecánica Principal ⚙️, 4. Desafío! 🔥, 5. Final (Victoria🏆/Derrota💀), 6. Mensaje Final 🌍". Imagen: Mostrar una plantilla de Storyboard de 6 cuadros vacía.
+                        </td>
+                        <td>
+                             "¡Agentes, ahora vamos a usar <strong>'Storyboard' (Guion Gráfico)</strong> para visualizar cómo será la jugabilidad de sus videojuegos Scratch paso a paso! ¡Como si fueran directores de cine creando el guion de su próxima película, pero en versión videojuego interactivo!"
+                             <br><br>
+                             "Un Storyboard es como un cómic que muestra las pantallas clave de nuestro juego y qué pasa. Vamos a dibujar <strong>6 escenas clave</strong> que cuenten la historia de su videojuego:"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 2:</strong> Explicar el contenido de cada una de las 6 escenas del Storyboard.
+                        </td>
+                        <td>
+                            "  • <strong>Escena 1: Pantalla de Inicio del Juego:</strong> ¿Cómo empieza todo? Título, botón 'Jugar', ¡algo que invite a la aventura!"
+                            <br>
+                            "  • <strong>Escena 2: Nivel 1 (o Introducción):</strong> ¿Dónde estamos? ¿Quién es nuestro personaje? ¿Cuál es el primer reto u objetivo?"
+                            <br>
+                            "  • <strong>Escena 3: Mecánica Principal en Acción:</strong> ¿Cómo se juega? ¡Muestren la acción principal! ¿Saltar? ¿Recoger? ¿Construir? ¿Qué pasa cuando lo haces bien?"
+                            <br>
+                            "  • <strong>Escena 4: ¡Desafío o Giro Inesperado!:</strong> ¿Qué pone las cosas difíciles o emocionantes? ¿Un enemigo? ¿Un obstáculo sorpresa? ¿Un nuevo poder?"
+                            <br>
+                            "  • <strong>Escena 5: Final del Juego (Victoria/Derrota):</strong> ¿Qué pasa si ganas? (¡Fiesta! 🎉) ¿Y si pierdes? (¡Oh, no! 😥). Dibujen los dos finales posibles."
+                            <br>
+                            "  • <strong>Escena 6: Pantalla Final (Mensaje ODS):</strong> ¿Qué mensaje importante sobre el ODS quieren dejar al jugador? ¿Una frase? ¿Un dibujo? ¿Una invitación a actuar?"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 3:</strong> Instruir a los equipos para que usen sus ideas del 6-3-5 y dibujen las 6 escenas en la plantilla. Dar tiempo amplio y circular.
+                        </td>
+                        <td>
+                            "¡Usen las ideas del 6-3-5! Tomen una plantilla (Miro o papel) y dibujen estas 6 escenas. No tienen que ser perfectos, <strong>¡bocetos claros son suficientes!</strong> ¡Imaginen la película de su juego!"
+                            <br><br>
+                            <em>(Dar tiempo amplio para esta actividad central. Circular activamente, ayudando a los equipos a secuenciar sus ideas, a visualizar cada escena y a conectar con sus restricciones y mensaje ODS).</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <strong>Paso 4:</strong> Proyectar la <strong>Diapositiva 17 (Ejemplo Coral Bleaching - ILUSTRACIÓN DE LA TÁCTICA):</strong> Título: "Ejemplo Storyboard: Coral Bleaching". Imagen: Mostrar la tabla visual con los 6 bocetos del storyboard de "Coral Bleaching" (Inicio, Nivel 1 Peligro, Nivel 2 Calor, Nivel 3 Tormenta, Final Victoria, Final Derrota). (Asegúrate de incluir la Escena 6 - Mensaje final, que podría faltar en el original).
+                        </td>
+                         <td>
+                            "Miren el ejemplo del juego 'Coral Bleaching'. Ellos dibujaron su pantalla de inicio, cómo empezaba el peligro, el desafío del calor, la tormenta, y los dos finales (arrecife salvado o perdido). ¡Así planearon toda la aventura! ¡Ahora creen ustedes su propio guion gráfico!"
+                             <br><br>
+                             <em>(Consejo Maestro: Fomenta la narrativa visual. Ayúdales a pensar en la progresión. Si se atascan, sugiéreles simplificar o volver a las ideas del 6-3-5. Verifica que el mensaje ODS se refleje).</em>
+                             <br><br>
+                             <em>(Entregable: Storyboard de 6 viñetas por equipo (digital o físico) visualizando la secuencia del juego).</em>
+                         </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 3: Cierre de la Sesión 3 -->
+        <div id="activity-3" class="activity" data-time="5">
+            <div class="banner" onclick="toggleContent('activity_3_content')">
+                 <div class="title">🏁 Actividad 3: Cierre de la Sesión 3: Jugabilidad Visualizada, ¡Listos para Refinar! ⏰ Tiempo: 5 minutos</div>
+            </div>
+            <div id="activity_3_content" class="content">
+                 <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Felicitar a los equipos por crear sus Storyboards.
+                        </td>
+                        <td>
+                            "¡Directores de videojuegos, excelente trabajo! ¡Han creado Storyboards increíbles, visualizando la película completa de sus juegos Scratch paso a paso! ¡Ya casi podemos jugarlos!"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <strong>Paso 2:</strong> Pedir que revisen sus guiones gráficos y anticipar la Sesión 4 (Refinamiento y T-Bar).
+                        </td>
+                         <td>
+                            "Miren sus guiones gráficos. ¡Esa es la aventura que van a construir! Guárdenlos muy bien."
+                            <br><br>
+                            "En la próxima sesión, ¡la última!, vamos a refinar estas ideas. Usaremos súper poderes de equipo ('Yes, and...') para hacerlas aún más geniales y también usaremos nuestra lupa de detectives ('Concerns, Confusions, Conflicts') para encontrar cositas que mejorar. ¡Y finalmente, crearemos el Plan Maestro T-Bar!"
+                         </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 3:</strong> Instrucción final.
+                        </td>
+                        <td>
+                             "¡Prepárense para pulir sus diamantes! ¡Nos vemos en la Sesión 4!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div> <!-- Fin del container -->
+</body>
+</html>
